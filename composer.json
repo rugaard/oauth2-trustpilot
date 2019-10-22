@@ -1,0 +1,51 @@
+{
+  "name": "rugaard/oauth2-trustpilot",
+  "type": "library",
+  "description": "Trustpilot OAuth 2.0 Client Provider for The PHP League OAuth2-Client",
+  "keywords": [
+    "trustpilot",
+    "oauth",
+    "oauth2",
+    "client",
+    "authorization",
+    "authorisation",
+    "morten",
+    "rugaard",
+    "morten rugaard"
+  ],
+  "authors": [
+    {
+      "name": "Morten Rugaard",
+      "email": "morten@rugaard.me",
+      "homepage": "https://github.com/rugaard",
+      "role": "Developer"
+    }
+  ],
+  "license": "MIT",
+  "require": {
+    "league/oauth2-client": "^2.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5.0",
+    "mockery/mockery": "^1.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Rugaard\\OAuth2\\Client\\Trustpilot\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Rugaard\\OAuth2\\Client\\Trustpilot\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "./vendor/bin/phpunit --colors=always"
+  },
+  "prefer-stable": true,
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true
+  }
+}
